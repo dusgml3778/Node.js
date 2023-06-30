@@ -10,7 +10,7 @@
 
       res.write("<html>");
       res.write("<head><title>Enter Message</title></head>");
-      res.write("<body><form action='/message' method='POST'><input type = 'text' name='message'><button type ='submit'>send</button></form></body>")
+      res.write("<body><form action='/message' method='POST'><input type = 'text' name='message'><button type ='submit'>Send</button></form></body>")
       res.write("</html>");
       // 리턴 안적어주면 밑에 코드가 실행되서 오류가 남 
       return res.end();

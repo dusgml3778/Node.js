@@ -12,6 +12,9 @@ const express = require("express")
 
 const router = express.Router();
 
+const products = [];
+
+// Get
 router.get('/add-product', (req, res, nex) => {
   // 응답을 보내기도 함 
   res.sendFile(path.join(__dirname,"../","views","add-product.html"))
@@ -20,10 +23,11 @@ router.get('/add-product', (req, res, nex) => {
 // post를 써줌으로써 post요청에만 반응하도록 할 수 있다 반대로 get도 가능
 router.post('/add-product', (req, res, next) => {
 
-  console.log(req.body)
+  products.push({title:req.body.title})
   res.redirect('/')
 
 })
 
-module.exports = router;
+exports.routes = router;
+exports.products = products
 

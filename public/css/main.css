@@ -1,5 +1,4 @@
-<style>
-    body {
+   body {
       padding: 0;
       margin: 0;
       font-family: sans-serif;
@@ -44,4 +43,3 @@
     .main-header__item a.active {
       color: #3e00a1;
     }
-  </style>

@@ -17,7 +17,7 @@ const products = [];
 // Get
 router.get('/add-product', (req, res, nex) => {
   // 응답을 보내기도 함 
-  res.sendFile(path.join(__dirname,"../","views","add-product.html"))
+  res.render("add-product", {pageTitle : "Add Product", path:"/admin/add-product"})
 });
 
 // post를 써줌으로써 post요청에만 반응하도록 할 수 있다 반대로 get도 가능
